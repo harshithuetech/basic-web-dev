@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    width: 100vw;
+    justify-content: space-between;
+}
+
+ul {
+    width: 100%;
+    display: flex;
+    gap:20px;
+    justify-content: space-between;
+}
+
+ul li {
+    list-style: none;
+}
+
+#nav-logo{
+    height: 50px;
+    width: 50px;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    gap:20px;
+}
