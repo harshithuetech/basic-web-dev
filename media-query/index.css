@@ -1,0 +1,14 @@
+body{
+    background-color: cadetblue;
+}
+
+p {
+    font-size: 64px;
+    font-weight: bolder;
+}
+
+@media screen  and (max-width:980px){
+  body{
+    background-color: rgb(217, 137, 137);
+  }  
+}
