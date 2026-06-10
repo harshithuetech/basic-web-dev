@@ -116,8 +116,112 @@ var num2 = "10";
 // console.log(num);
 
 // ternary
-var age = 18;
-var haveLicense = false
-var result = (age >= 18 && haveLicense) ? "Pass" : "Fail";
-console.log(result);
+// var age = 18;
+// var haveLicense = false
+// var result = (age >= 18 && haveLicense) ? "Pass" : "Fail";
+// console.log(result);
 
+// console.log(11 + 28 + "25" - 100);
+// console.log(100 > 99 > 0);
+
+// var age = 10;
+
+// if(age>=18){
+//     console.log("Drive");
+// } else{
+//     console.log("Can't Drive");
+// }
+
+
+// const marks = 68;
+
+// if (marks>90){
+//     console.log("A");
+// } else if (marks >70){
+//     console.log("B");
+// } else if (marks > 50){
+//     console.log("c");
+// }
+
+
+// var operation = "Sub";
+//  switch(operation){
+//     case "Add":
+//         console.log("Addition")
+//         break;
+//     case "Sub" :
+//         console.log("Subtraction")
+//         break;
+//     case "Mul":
+//         console.log("Multiplication")
+//         break;
+//     default:
+//         console.log("Wrong Input");
+//         break;
+//  }
+
+// Loops
+// while
+var num = 1;
+// while(num<11){
+//     console.log(num);
+//     num++;
+// }
+
+// do{
+//     console.log(num);
+//     num++;
+// }while(num<11);
+
+// console.log(num);
+// for (num = 1; num <= 10; num++) {
+//     console.log(num);
+// }
+
+
+// const arr = [1, 2, 3, 4, 5];
+// console.log(arr[0]);
+// arr.push(21);
+// arr.shift();
+// arr.unshift(22);
+
+// arr.splice(2,1,24);
+// console.log(arr);
+
+
+const arr = [1, 2, 3, 4, 5];
+
+// for(var num=0; num<arr.length; num++){
+//     console.log(arr[num]);
+// }
+
+// for (const num of arr) {
+//     console.log(num);
+// }
+
+// for (const num in arr) {
+//     console.log(num);
+// }
+
+// arr.forEach(value=>{
+//     console.log(value);
+// })
+
+// var result = arr.map(value=>{
+//     return(value + 2);
+// })
+
+// console.log(result);
+
+function greet (){
+    console.log("Hello");
+}
+
+greet();
+greet();
+greet();
+greet();
+greet();
+greet();
+greet();
+greet();
