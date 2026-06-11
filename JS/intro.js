@@ -189,7 +189,7 @@ var num = 1;
 // console.log(arr);
 
 
-const arr = [1, 2, 3, 4, 5];
+// const arr = [1, 2, 3, 4, 5];
 
 // for(var num=0; num<arr.length; num++){
 //     console.log(arr[num]);
@@ -207,21 +207,161 @@ const arr = [1, 2, 3, 4, 5];
 //     console.log(value);
 // })
 
-// var result = arr.map(value=>{
+// var result = arr.map(value => {
 //     return(value + 2);
 // })
 
 // console.log(result);
 
-function greet (){
-    console.log("Hello");
-}
+// function greet() {
+//     console.log("Hello");
+// }
 
-greet();
-greet();
-greet();
-greet();
-greet();
-greet();
-greet();
-greet();
+// greet();
+// greet();
+// greet();
+// greet();
+// greet();
+// greet();
+// greet();
+// greet();
+
+
+// Array Question
+// var arr = [34, 64, 50, 21, 99, 36, 75];
+
+// let result = arr[0];
+
+// for (const element of arr) {
+//     if (result < element) {
+//         result = element;
+//     }
+// }
+
+// console.log(result);
+
+//  function greet(name) {
+//     console.log("Hello "+ name);
+// }
+
+// greet("Harshit");
+
+
+// function add(a, b){
+//     var sum = a + b;
+// console.log(a+b)
+//     return sum
+//     console.log("first");
+// }
+
+// var result = add(5,5);
+// console.log(result);
+
+
+// var sum = function add(a, b){
+//     var sum = a + b;
+//     // console.log(sum)
+//     return sum
+// }
+
+//  var result = sum (7,7);
+
+
+// const add = (a, b) =>{
+//  return a + b;   
+// }
+
+// const add = (a, b) => a + b;
+
+// const greet = name => `Hello ${name}`
+
+// console.log(greet("Harshit"))
+
+// var result = add(9, 9);
+// console.log(result);
+
+
+// const arr = [11, 32, 50, 46, 7, 10, 9, 35, 25];
+
+// const resArr = arr.map(value => {
+//     if (value > 30) {
+//         return value;
+//     }
+// })
+
+// console.log(resArr)
+
+// const resArr1 = arr.filter(value => value > 30);
+
+// console.log(resArr1)
+
+// const arr = [1, 2, 3, 4, 5, 6];
+
+
+// var sumOfArr = arr.reduce((initVal, value)=>{
+//     return initVal + value;
+// }, 0)
+
+// console.log(sumOfArr);
+
+
+
+// console.log("Start");
+
+// setTimeout(()=>{
+//     console.log("Mid")
+// },3000)
+
+// console.log("End");
+
+
+
+// var person = {
+//     name:"Xyz",
+//     age:21,
+//     email:"xyz@gmail.com",
+//     address: {
+//         city: "mumbai",
+//         pincode: 123
+//     }
+// }
+
+// console.log(person)
+// console.log(typeof person)
+// console.log(person.name)
+// console.log(person.email)
+
+// person.email = "xyz@outlook.com"
+// person.mobile = "99999999999";
+
+
+
+// const {name, email, mobile} = person;
+// console.log(name);
+// console.log(email);
+// console.log(mobile);
+// console.log(person.address.city)
+
+// const currentDate = new Date();
+// console.log(currentDate);
+
+// var time = setInterval(() => {
+//     const currentDate = new Date();
+//     console.log(currentDate.toLocaleTimeString());
+// }, 1000)
+
+// setTimeout(()=>{
+//     clearInterval(time);
+// },5000)
+var localCount = localStorage.getItem("count");
+var count = localCount ? localCount : 0;
+
+var pCount = document.getElementById("count");
+var btn = document.getElementById("addBtn");
+pCount.textContent = count;
+
+btn.addEventListener("click",()=>{
+    count++;
+    pCount.textContent = count;
+    localStorage.setItem("count", count);
+});
