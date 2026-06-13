@@ -358,10 +358,24 @@ var count = localCount ? localCount : 0;
 
 var pCount = document.getElementById("count");
 var btn = document.getElementById("addBtn");
+var btn2 = document.getElementById("subBtn");
+var btn3 = document.getElementById("resetBtn");
 pCount.textContent = count;
 
-btn.addEventListener("click",()=>{
+btn.addEventListener("click", () => {
     count++;
+    pCount.textContent = count;
+    localStorage.setItem("count", count);
+});
+
+btn2.addEventListener("click", () => {
+    count--;
+    pCount.textContent = count;
+    localStorage.setItem("count", count);
+});
+
+btn3.addEventListener("click", () => {
+    count = 0;
     pCount.textContent = count;
     localStorage.setItem("count", count);
 });
